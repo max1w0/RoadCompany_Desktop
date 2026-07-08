@@ -1,0 +1,90 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style TargetType="{x:Type Grid}">
+        <Setter Property="Background" Value="{DynamicResource GreyColor}"/>
+    </Style>
+
+    <Style TargetType="{x:Type Border}">
+        <Setter Property="Background" Value="{DynamicResource WhiteColor}"/>
+    </Style>
+
+    <Style TargetType="{x:Type Border}" x:Key="Borders">
+        <Setter Property="Background" Value="{DynamicResource WhiteColor}"/>
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="Padding" Value="5"/>
+    </Style>
+
+    <Style TargetType="{x:Type TextBox}">
+        <Setter Property="Margin" Value="0 10"/>
+    </Style>
+
+    <Style TargetType="{x:Type Button}">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Padding" Value="5"/>
+        <Setter Property="Margin" Value="5"/>
+        <Setter Property="Height" Value="30"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Background" Value="{DynamicResource PrimaryBackgroundColor}"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="border"
+                        Background="{TemplateBinding Background}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        SnapsToDevicePixels="True">
+                        <ContentPresenter x:Name="contentPresenter"
+                                      ContentTemplate="{TemplateBinding ContentTemplate}"
+                                      Content="{TemplateBinding Content}"
+                                      ContentStringFormat="{TemplateBinding ContentStringFormat}"
+                                      HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                      Margin="{TemplateBinding Padding}"
+                                      SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                      RecognizesAccessKey="True"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="border" Property="Background" Value="{DynamicResource LightOrangeColor}"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="border" Property="Background" Value="{DynamicResource DarkGreyColor}"/>
+                            <Setter TargetName="contentPresenter" Property="Margin" Value="1 1 0 0"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type TextBlock}" x:Key="Title">
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="Foreground" Value="{DynamicResource PrimaryBackgroundColor}"/>
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="Background" Value="{DynamicResource GreyColor}"/>
+        <Setter Property="Padding" Value="10 5"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+    </Style>
+
+    <Style TargetType="TextBox" x:Key="ReadOnlyTextBox">
+        <Setter Property="IsReadOnly" Value="True"/>
+        <Setter Property="Background" Value="{DynamicResource WhiteColor}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource GreyColor}"/>
+    </Style>
+
+    <Style TargetType="ComboBox" x:Key="ReadOnlyComboBox">
+        <Setter Property="IsEnabled" Value="False"/>
+        <Setter Property="Background" Value="{DynamicResource WhiteColor}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource GreyColor}"/>
+    </Style>
+
+    <Style TargetType="DatePicker" x:Key="ReadOnlyDatePicker">
+        <Setter Property="IsEnabled" Value="False"/>
+        <Setter Property="Background" Value="{DynamicResource WhiteColor}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource GreyColor}"/>
+    </Style>
+
+</ResourceDictionary>

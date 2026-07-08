@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ffd1630b27264207979078490dcd7908" Name="Diagram1">
+        <EntityTypeShape EntityType="RoadModel.Absence" Width="1.5" PointX="8.25" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadModel.AbsenceType" Width="1.5" PointX="6" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadModel.Candidate" Width="1.5" PointX="3" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadModel.Department" Width="1.5" PointX="9" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadModel.Employee" Width="1.5" PointX="6" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadModel.EmployeeDepartment" Width="1.5" PointX="11.25" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadModel.Event" Width="1.5" PointX="6" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadModel.EventEmployee" Width="1.5" PointX="8.25" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadModel.Image" Width="1.5" PointX="6" PointY="20.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadModel.Material" Width="1.5" PointX="8.25" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadModel.MaterialTrening" Width="1.5" PointX="10.5" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadModel.Parlor" Width="1.5" PointX="3.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadModel.Person" Width="1.5" PointX="0.75" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadModel.Position" Width="1.5" PointX="0.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadModel.Skill" Width="1.5" PointX="5.25" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadModel.Status" Width="1.5" PointX="6" PointY="22.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadModel.SubdDepartment" Width="1.5" PointX="11.25" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadModel.SubDepartment" Width="1.5" PointX="9" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadModel.Subdivision" Width="1.5" PointX="9" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadModel.TrainingCalendar" Width="1.5" PointX="8.25" PointY="21.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadModel.TypeEvent" Width="1.5" PointX="3.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadModel.TypeMaterial" Width="1.5" PointX="6" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadModel.User" Width="1.5" PointX="8.25" PointY="24.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadModel.WorkEmployee" Width="1.5" PointX="13.5" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="RoadModel.WorkingCalendar" Width="1.5" PointX="11.25" PointY="6.375" IsExpanded="true" />
+        <AssociationConnector Association="RoadModel.FK_Absence_AbsenceTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadModel.FK_Absence_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadModel.FK_WorkEmployee_Absence" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadModel.FK_Candidate_Position" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadModel.FK_Resume_Person" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadModel.FK_EmployeeDepartment_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadModel.FK_SubdDepartment_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadModel.FK_Employee_Parlor" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadModel.FK_Employee_Person" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadModel.FK_Employee_Position" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadModel.FK_EmployeeDepartment_Employee1" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadModel.FK_EmployeeDepartment_Employee2" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadModel.FK_EventEmployee_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadModel.FK_Material_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadModel.FK_WorkEmployee_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadModel.FK_EmployeeDepartment_SubDepartment" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadModel.FK_Event_TypeEvent" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadModel.FK_EventEmployee_Event" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadModel.FK_MaterialsTrenings_Event" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadModel.FK_Material_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadModel.FK_Material_TypeMaterial" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadModel.FK_MaterialsTrenings_Material" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadModel.FK_MaterialsTrenings_TrainingCalendar" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadModel.FK_SubdDepartment_Subdivision" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadModel.FK_WorkEmployee_WorkingCalendar" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadModel.CandidateSkill" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadModel.EmployeeAccount" ManuallyRouted="false" />
+        <AssociationConnector Association="RoadModel.ImageMaterial" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

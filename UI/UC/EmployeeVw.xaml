@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="RoadCompany.UI.UC.EmployeeVw"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RoadCompany.UI.UC"
+             mc:Ignorable="d" 
+             d:DesignHeight="130" d:DesignWidth="360">
+    <Button x:Name="EmployeeCardBtn" Background="{DynamicResource GreyColor}" Height="130" Width="360" Click="EmployeeCardBtn_Click" Foreground="{DynamicResource BlackColor}">
+        <Grid HorizontalAlignment="Left" Height="100" Width="320" Background="Transparent">
+            <StackPanel>
+                <TextBlock x:Name="fullNameEmp" Text="{Binding FullNameEmp}" FontWeight="Bold"/>
+                <TextBlock x:Name="structureEmp" Text="{Binding StructureEmp}"/>
+                <TextBlock x:Name="positionEmp" Text="{Binding PositionEmp}"/>
+                <TextBlock x:Name="phoneEmp" Text="{Binding PhoneEmp}"/>
+                <TextBlock x:Name="parlorEmp" Text="{Binding ParlorEmp}"/>
+                <TextBlock x:Name="emailEmp" Text="{Binding EmailEmp}"/>
+            </StackPanel>
+        </Grid>
+    </Button>
+</UserControl>

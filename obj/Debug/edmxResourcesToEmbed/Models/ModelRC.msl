@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище RoadModelContainer" CdmEntityContainer="RoadEntities">
+    <EntitySetMapping Name="Absence">
+      <EntityTypeMapping TypeName="RoadModel.Absence">
+        <MappingFragment StoreEntitySet="Absence">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DateStart" ColumnName="DateStart" />
+          <ScalarProperty Name="DateEnd" ColumnName="DateEnd" />
+          <ScalarProperty Name="ReplacementId" ColumnName="ReplacementId" />
+          <ScalarProperty Name="AbsenceTypeId" ColumnName="AbsenceTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AbsenceType">
+      <EntityTypeMapping TypeName="RoadModel.AbsenceType">
+        <MappingFragment StoreEntitySet="AbsenceType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Candidate">
+      <EntityTypeMapping TypeName="RoadModel.Candidate">
+        <MappingFragment StoreEntitySet="Candidate">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PersonId" ColumnName="PersonId" />
+          <ScalarProperty Name="AppliedPosition" ColumnName="AppliedPosition" />
+          <ScalarProperty Name="AboutEmployee" ColumnName="AboutEmployee" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Department">
+      <EntityTypeMapping TypeName="RoadModel.Department">
+        <MappingFragment StoreEntitySet="Department">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DepartmentName" ColumnName="DepartmentName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employee">
+      <EntityTypeMapping TypeName="RoadModel.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PersonId" ColumnName="PersonId" />
+          <ScalarProperty Name="JobId" ColumnName="JobId" />
+          <ScalarProperty Name="WorkPhone" ColumnName="WorkPhone" />
+          <ScalarProperty Name="ParlorId" ColumnName="ParlorId" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmployeeDepartment">
+      <EntityTypeMapping TypeName="RoadModel.EmployeeDepartment">
+        <MappingFragment StoreEntitySet="EmployeeDepartment">
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+          <ScalarProperty Name="SubDepartmentId" ColumnName="SubDepartmentId" />
+          <ScalarProperty Name="ManagerId" ColumnName="ManagerId" />
+          <ScalarProperty Name="AssistantId" ColumnName="AssistantId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Event">
+      <EntityTypeMapping TypeName="RoadModel.Event">
+        <MappingFragment StoreEntitySet="Event">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EventEmployee">
+      <EntityTypeMapping TypeName="RoadModel.EventEmployee">
+        <MappingFragment StoreEntitySet="EventEmployee">
+          <ScalarProperty Name="EventId" ColumnName="EventId" />
+          <ScalarProperty Name="Employee" ColumnName="Employee" />
+          <ScalarProperty Name="IsOrganizer" ColumnName="IsOrganizer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Image">
+      <EntityTypeMapping TypeName="RoadModel.Image">
+        <MappingFragment StoreEntitySet="Image">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Parth" ColumnName="Parth" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Material">
+      <EntityTypeMapping TypeName="RoadModel.Material">
+        <MappingFragment StoreEntitySet="Material">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ApprovalDate" ColumnName="ApprovalDate" />
+          <ScalarProperty Name="ChangeDate" ColumnName="ChangeDate" />
+          <ScalarProperty Name="SatusId" ColumnName="SatusId" />
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="AuthorId" ColumnName="AuthorId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MaterialTrening">
+      <EntityTypeMapping TypeName="RoadModel.MaterialTrening">
+        <MappingFragment StoreEntitySet="MaterialTrening">
+          <ScalarProperty Name="EventId" ColumnName="EventId" />
+          <ScalarProperty Name="MaterialId" ColumnName="MaterialId" />
+          <ScalarProperty Name="TrainingId" ColumnName="TrainingId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Parlor">
+      <EntityTypeMapping TypeName="RoadModel.Parlor">
+        <MappingFragment StoreEntitySet="Parlor">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ParlorName" ColumnName="ParlorName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Person">
+      <EntityTypeMapping TypeName="RoadModel.Person">
+        <MappingFragment StoreEntitySet="Person">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Position">
+      <EntityTypeMapping TypeName="RoadModel.Position">
+        <MappingFragment StoreEntitySet="Position">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PositionName" ColumnName="PositionName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Skill">
+      <EntityTypeMapping TypeName="RoadModel.Skill">
+        <MappingFragment StoreEntitySet="Skill">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Status">
+      <EntityTypeMapping TypeName="RoadModel.Status">
+        <MappingFragment StoreEntitySet="Status">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SubdDepartment">
+      <EntityTypeMapping TypeName="RoadModel.SubdDepartment">
+        <MappingFragment StoreEntitySet="SubdDepartment">
+          <ScalarProperty Name="SubdDepartment_id" ColumnName="SubdDepartment_id" />
+          <ScalarProperty Name="SubdivisionId" ColumnName="SubdivisionId" />
+          <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SubDepartment">
+      <EntityTypeMapping TypeName="RoadModel.SubDepartment">
+        <MappingFragment StoreEntitySet="SubDepartment">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subdivision">
+      <EntityTypeMapping TypeName="RoadModel.Subdivision">
+        <MappingFragment StoreEntitySet="Subdivision">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrainingCalendar">
+      <EntityTypeMapping TypeName="RoadModel.TrainingCalendar">
+        <MappingFragment StoreEntitySet="TrainingCalendar">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ExceptionDate" ColumnName="ExceptionDate" />
+          <ScalarProperty Name="IsEventDay" ColumnName="IsEventDay" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeEvent">
+      <EntityTypeMapping TypeName="RoadModel.TypeEvent">
+        <MappingFragment StoreEntitySet="TypeEvent">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeMaterial">
+      <EntityTypeMapping TypeName="RoadModel.TypeMaterial">
+        <MappingFragment StoreEntitySet="TypeMaterial">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="RoadModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkEmployee">
+      <EntityTypeMapping TypeName="RoadModel.WorkEmployee">
+        <MappingFragment StoreEntitySet="WorkEmployee">
+          <ScalarProperty Name="WorkEmployee_id" ColumnName="WorkEmployee_id" />
+          <ScalarProperty Name="WorkingDayId" ColumnName="WorkingDayId" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="IsWorking" ColumnName="IsWorking" />
+          <ScalarProperty Name="AbsenceId" ColumnName="AbsenceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkingCalendar">
+      <EntityTypeMapping TypeName="RoadModel.WorkingCalendar">
+        <MappingFragment StoreEntitySet="WorkingCalendar">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ExceptionDate" ColumnName="ExceptionDate" />
+          <ScalarProperty Name="IsWorkingDay" ColumnName="IsWorkingDay" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="CandidateSkill" TypeName="RoadModel.CandidateSkill" StoreEntitySet="CandidateSkill">
+      <EndProperty Name="Candidate">
+        <ScalarProperty Name="Id" ColumnName="ResumeId" />
+      </EndProperty>
+      <EndProperty Name="Skill">
+        <ScalarProperty Name="Id" ColumnName="SkillId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="EmployeeAccount" TypeName="RoadModel.EmployeeAccount" StoreEntitySet="EmployeeAccount">
+      <EndProperty Name="Employee">
+        <ScalarProperty Name="Id" ColumnName="EmployeeId" />
+      </EndProperty>
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="UserId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ImageMaterial" TypeName="RoadModel.ImageMaterial" StoreEntitySet="ImageMaterial">
+      <EndProperty Name="Image">
+        <ScalarProperty Name="Id" ColumnName="IdImage" />
+      </EndProperty>
+      <EndProperty Name="Material">
+        <ScalarProperty Name="Id" ColumnName="IdMaterial" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
